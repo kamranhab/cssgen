@@ -1,0 +1,259 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #c8c8c8c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 90%;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.header-container,
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.wordmark {
+  font-size: 1.4rem;
+  padding-left: 10px;
+  color: #404040;
+}
+
+.xlogo {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* .x-username {
+  font-size: 1rem;
+  padding-left: 10px;
+} */
+
+.custom-file-input {
+  background-color: #0c7bfa;
+  width: 90px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-input:hover {
+  background-color: #0056b3;
+}
+
+#fileInput {
+  display: none;
+}
+
+textarea {
+  width: 26vw;
+  height: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #495057;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #1e1e1e;
+  color: #ea9a77a5;
+  transition: border-color 0.3s ease-in-out;
+  resize: none;
+}
+
+textarea:hover,
+textarea:focus {
+  border-color: #79c0ff;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.io-container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  gap: 10px;
+}
+
+.input-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #3b3b3b;
+  border-radius: 10px;
+  width: 41vw;
+}
+
+.input-left {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.choose-file-container {
+  padding: 20px 0 20px 0;
+}
+
+.file-name {
+  color: #000;
+}
+
+.input-right {
+  display: flex;
+  width: 11vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.drop-img {
+  height: 60px;
+  width: 60px;
+}
+
+.drag-drop-text {
+  color: #1a1a1a;
+}
+
+.output-container {
+  height: 100%;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242424;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  padding: 0 18px;
+}
+
+.css-text {
+  color: #fff;
+}
+
+.download-button,
+.copy-button {
+  all: unset;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.download-button:hover {
+  background-color: #0c7bfa;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.css-output {
+  background-color: #0f0f0f;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  padding: 15px 18px;
+  border-radius: 0 0 10px 10px;
+  overflow: auto;
+}
+
+.generate-container {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
+a{
+  text-decoration: none;
+}
+
+.generate-button,
+.clear-button {
+  all: unset;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.generate-button {
+  background-color: #2fa52d;
+  border: 1px solid #269824;
+  color: #fff;
+  padding: 10px 15px;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.generate-button:hover {
+  background-color: #028300;
+}
+pre {
+  color: #fff;
+}
+
+.clear-button {
+    padding: 10px 12px;
+
+  border: 1px solid #2a2a2a;
+  margin-right: 20px;
+  transition: all 0.2s;
+}
+.clear-button:hover {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.class-name {
+  color: #61c2faca;
+  font-size: 0.8rem;
+}
+
+.braces {
+  color: #c8a74ed5;
+}

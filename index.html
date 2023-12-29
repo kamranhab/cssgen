@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Skeleton Generator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@450&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <img src="logo.png" alt="Logo" class="logo" />
+          <h1 class="wordmark">CSS Skeleton Generator</h1>
+        </div>
+        <div class="header-right">
+          <a href="https://twitter.com/kamranhab" target="_blank"><img src="xlogo.png" alt="X Logo" class="xlogo" /></a>
+          <!-- <p class="x-username">@kamranhab</p> -->
+        </div>
+      </div>
+    </header>
+
+    <section class="main-section">
+      <div class="io-container">
+        <div class="input-container">
+          <div class="input-left">
+            <div class="choose-file-container">
+            <label for="fileInput" class="custom-file-input">Choose File</label>
+            <input
+              type="file"
+              id="fileInput"
+              accept=".html, .jsx, .js, .tsx"
+              onchange="handleFileUpload()"
+            />
+            <span class="file-name" id="fileName">No File Chosen</span>
+          </div>
+            <textarea
+              id="htmlInput"
+              placeholder="Paste your HTML/JSX code here..."
+            ></textarea>
+          </div>
+          <div
+            class="input-right"
+            id="dropArea"
+            ondrop="handleDrop(event)"
+            ondragover="handleDragOver(event)"
+          >
+            <img src="drop.png" alt="Drag and Drop" class="drop-img" />
+            <p class="drag-drop-text">
+              <strong>Drag and Drop</strong> your <br> HTML/JSX file here
+            </p>
+          </div>
+        </div>
+
+        <div class="output-container">
+          <div class="output-top">
+            <p class="css-text">CSS</p>
+            <div class="action-buttons">
+              <button
+                class="copy-button"
+                id="copyButton"
+                onclick="copyToClipboard()"
+              >
+                Copy
+              </button>
+              <button
+                class="download-button"
+                id="downloadButton"
+                onclick="downloadCSS()"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+          <pre class="css-output" id="cssOutput"> CSS </pre>
+        </div>
+        
+      </div>
+      <div class="generate-container">
+        
+        <button class="clear-button" onclick="clearInput()">Clear</button>
+        <button class="generate-button" onclick="generateCSS()">
+          Generate CSS
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
