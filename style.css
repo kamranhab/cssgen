@@ -228,7 +228,6 @@ a {
 .mobile-clear-button,
 .mobile-generate-button {
   all: unset;
-  background-color: #fff;
   color: #000;
   border-radius: 5px;
   margin-right: 5px;
@@ -236,8 +235,8 @@ a {
 }
 
 .generate-button {
-  background-color: #2fa52d;
-  border: 1px solid #269824;
+  background-color: #268726;
+  border: 1px solid #268726;
   color: #fff;
   padding: 10px 15px;
 
@@ -245,8 +244,8 @@ a {
 }
 
 .mobile-generate-button {
-  background-color: #2fa52d;
-  border: 1px solid #269824;
+  background-color: #268726;
+  border: 1px solid #268726;
   color: #fff;
   padding: 8px 10px;
 
@@ -254,11 +253,11 @@ a {
 }
 
 .mobile-generate-button:hover {
-  background-color: #028300;
+  background-color: #027300;
 }
 
 .generate-button:hover {
-  background-color: #028300;
+  background-color: #027300;
 }
 pre {
   color: #fff;
