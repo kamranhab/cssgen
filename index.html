@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CSS Skeleton Generator - A tool to extract classes from HTML/JSX code and generate a CSS skeleton."
+    />
+
+    <meta
+      property="og:description"
+      content="CSS Skeleton Generator - A tool to extract classes from HTML/JSX code and generate a CSS skeleton."
+    />
+    <meta property="og:image" content="long.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CSS Skeleton Generator" />
+    <meta
+      name="twitter:description"
+      content="CSS Skeleton Generator - A tool to extract classes from HTML/JSX code and generate a CSS skeleton."
+    />
+
     <title>CSS Skeleton Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
 
     <script defer src="main.js"></script>
   </head>
@@ -18,7 +35,9 @@
           <h1 class="wordmark">CSS Skeleton Generator</h1>
         </div>
         <div class="header-right">
-          <a href="https://twitter.com/kamranhab" target="_blank"><img src="xlogo.png" alt="X Logo" class="xlogo" /></a>
+          <a href="https://twitter.com/kamranhab" target="_blank"
+            ><img src="xlogo.png" alt="X Logo" class="xlogo"
+          /></a>
           <!-- <p class="x-username">@kamranhab</p> -->
         </div>
       </div>
@@ -29,15 +48,17 @@
         <div class="input-container">
           <div class="input-left">
             <div class="choose-file-container">
-            <label for="fileInput" class="custom-file-input">Choose File</label>
-            <input
-              type="file"
-              id="fileInput"
-              accept=".html, .jsx, .js, .tsx"
-              onchange="handleFileUpload()"
-            />
-            <span class="file-name" id="fileName">No File Chosen</span>
-          </div>
+              <label for="fileInput" class="custom-file-input"
+                >Choose File</label
+              >
+              <input
+                type="file"
+                id="fileInput"
+                accept=".html, .jsx, .js, .tsx"
+                onchange="handleFileUpload()"
+              />
+              <span class="file-name" id="fileName">No File Chosen</span>
+            </div>
             <textarea
               id="htmlInput"
               placeholder="Paste your HTML/JSX code here..."
@@ -51,13 +72,16 @@
           >
             <img src="drop.png" alt="Drag and Drop" class="drop-img" />
             <p class="drag-drop-text">
-              <strong>Drag and Drop</strong> your <br> HTML/JSX file here
+              <strong>Drag and Drop</strong> your <br />
+              HTML/JSX file here
             </p>
           </div>
         </div>
 
         <div class="mobile-generate-container">
-          <button class="mobile-clear-button" onclick="clearInput()">Clear</button>
+          <button class="mobile-clear-button" onclick="clearInput()">
+            Clear
+          </button>
           <button class="mobile-generate-button" onclick="generateCSS()">
             Generate CSS
           </button>
@@ -85,10 +109,8 @@
           </div>
           <pre class="css-output" id="cssOutput"></pre>
         </div>
-        
       </div>
       <div class="generate-container">
-        
         <button class="clear-button" onclick="clearInput()">Clear</button>
         <button class="generate-button" onclick="generateCSS()">
           Generate CSS
