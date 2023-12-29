@@ -76,14 +76,13 @@ function generateCSS() {
     document.getElementById("copyButton").style.display = "inline-block";
   } else {
     cssOutput.innerHTML = "No valid class names found.";
-    document.getElementById("copyButton").style.display = "none";
   }
 }
 
 function clearInput() {
   htmlInput.value = "";
   cssOutput.textContent = "";
-  fileNameElement.textContent = "";
+  fileNameElement.textContent = "No File Chosen";
 }
 
 function copyToClipboard() {
