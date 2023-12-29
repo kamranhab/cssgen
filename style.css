@@ -203,8 +203,9 @@ textarea:focus {
 
 .generate-container {
   display: flex;
-  height: 15vh;
+  height: 12vh;
   align-items: center;
+  margin-top: 5px;
   justify-content: flex-start;
   width: 80%;
 }
