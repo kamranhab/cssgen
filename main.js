@@ -53,7 +53,7 @@ function generateCSS() {
   const cssOutput = document.getElementById("cssOutput");
 
   const classNames = [];
-  const classRegex = /(className|class)\s*=\s*["']([^"']+)["']/g;
+  const classRegex = /(className|class)\s*=\s*["'“‘]([^"’“‘]+)["'”’]/g;
 
   let match;
   while ((match = classRegex.exec(htmlInput.value)) !== null) {
